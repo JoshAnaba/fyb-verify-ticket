@@ -192,7 +192,6 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding-top: 80px
 }
 
 .hero {
