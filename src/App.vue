@@ -192,6 +192,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  padding-top: 80px;
 }
 
 .hero {
@@ -273,7 +274,7 @@ h3 span {
 
 @media(max-width: 500px) {
   .inner-wrapper {
-    padding-top: 100px;
+    padding-top: 30px;
   }
 
   .hero {
