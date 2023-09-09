@@ -120,26 +120,6 @@ export default {
       .finally(()=>{
         this.loading = false
       })
-      // fetch(url,
-      // {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(data),
-      // })
-      //   .then(resp => resp.json())
-      //   .then((data) => {
-      //     if (!data.error) {
-      //       if (data.message = 'this ticket has already been used') {
-      //         this.ticketUsed = true
-      //       } else {
-      //         console.log(data)
-      //       }
-      //     } else {
-      //       this.errorOccurred = true
-      //     }
-      //   })
     },
     onResult (val) {
     
