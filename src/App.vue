@@ -24,6 +24,9 @@
             />
             <h3>Scan Barcode</h3>
           </div>
+          <div class="ctas">
+            <primary-button name="Terminate" @action="reset(false)" />
+          </div>
         </div>
         <div class="ctn" v-else-if="scanned && loading">
           <h2>Verifying...</h2>
@@ -57,7 +60,7 @@
           <h3>Oops!, this ticket has already been used <br/>Please, contact support</h3>
           </div>
           <div class="ctas">
-            <primary-button name="Verify another" @action="reset()" />
+            <primary-button name="Verify another" @action="reset(true)" />
           </div>
         </div>
       </div>
@@ -87,9 +90,9 @@ export default {
   },
   
   methods: {
-    reset () {
+    reset (tapped) {
       this.scanned = false
-      this.tapped = true
+      this.tapped = tapped
       this.ticketUsed = false
       this.verified = false
     },
